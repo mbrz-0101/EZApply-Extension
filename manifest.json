@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "EZApply",
+  "description": "PLACEHOLDER",
+  "version": "1.0",
+  
+  "icons": {
+    "16": "images/ez_icon_red.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["jquery-3.3.1.js", "content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "images/ez_icon_red.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ]
+}
