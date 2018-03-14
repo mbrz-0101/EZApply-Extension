@@ -61,7 +61,7 @@ function fillInForm() {
 
     // Job Address 1
     
-    // Job Adress 2
+    // Job Address 2
 
     // Job City 1
 
