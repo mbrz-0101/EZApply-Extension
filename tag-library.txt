@@ -3,6 +3,7 @@ Build our library of tage patterns here:
 
 First Name:
 
+Attribute "name" = /f(\w+|\s|\w+\s|)name/i
 
 
 

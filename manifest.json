@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-      "js": ["jquery-3.3.1.js", "content.js"],
+      "js": ["jquery-3.3.1.js", "content.js", "popup.js"],
       "matches": ["<all_urls>"]
     }
   ],

@@ -11,26 +11,33 @@ console.log("This content script is working");
 
 function fillInForm() {
   let $inputs = $("input");
-  let fnameCounter = 0;
-  let lnameCounter = 0;
+  let $labels = $("label");
   console.log($inputs);
+  console.log($labels);
+  debugger;
 
   for (elt in $inputs) {
+    
+    for (label in $labels) {
+      if ($labels[label].attributes && $labels[label].attributes["for"]) {
+        if ($labels[label].attributes["for"].nodeValue === $inputs[elt].id) {
+          $($inputs[elt]).val($labels[label].innerText);
+        }
+      }
+    }
 
     // First name
     if ($inputs[elt].name && ($inputs[elt].name === "firstName" || $inputs[elt].name.includes("firstName") || $inputs[elt].name.includes("FirstName"))) {
       $($inputs[elt]).val("Matt");
-      fnameCounter++;
     }
 
     // Last name
     if ($inputs[elt].name && ($inputs[elt].name === "lastName")) {
       $($inputs[elt]).val("Brzowski");
-      lnameCounter++;
     }
 
     // Full name
-    if ($inputs[elt].name && fnameCounter === 0 && lnameCounter === 0  && ($inputs[elt].name === "name")) {
+    if ($inputs[elt].name && ($inputs[elt].name === "name")) {
       $($inputs[elt].val("Matt Brzowski"));
     }
     // Email
@@ -87,4 +94,5 @@ function fillInForm() {
 
     // Request additional fields button?
   }
+
 }
