@@ -2,23 +2,32 @@ Build our library of tage patterns here:
 
 
 First Name:
+<<<<<<< HEAD
 
 Attribute "name" = /f(\w+|\s|\w+\s|)name/i
 Attribute First Name = “FirstName”
 Attribute “guestFirstName
+=======
+REGEX = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
+>>>>>>> c543500863737e756f148a66d5a6bee4bb63a4b7
 
 
 
 Last Name:
+<<<<<<< HEAD
 
 Attribute Last Name = “lastName”
 Attribute Last Name = “LastName”
 Attribute “guestLastName”
 
+=======
+REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
+>>>>>>> c543500863737e756f148a66d5a6bee4bb63a4b7
 
 
 
 Email: 
+<<<<<<< HEAD
 
 Attribute Email Address = “EmailAddress”
 Attribute “email”
@@ -61,3 +70,5 @@ ZIP:
 Attribute ZIP Code: = “zip”
 Attribute “zip_code”
 
+=======
+>>>>>>> c543500863737e756f148a66d5a6bee4bb63a4b7

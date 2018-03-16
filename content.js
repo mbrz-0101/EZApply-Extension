@@ -20,16 +20,38 @@ function fillInForm() {
     
     for (label in $labels) {
       if ($labels[label].attributes && $labels[label].attributes["for"]) {
-        if ($labels[label].attributes["for"].nodeValue === $inputs[elt].id) {
+        if ($labels[label].attributes["for"].nodeValue === $inputs[elt].id || $labels[label].attributes["for"].nodeValue === $inputs[elt].name) {
           $($inputs[elt]).val($labels[label].innerText);
+
+          // ===========================
+          // We will be using our Regular Expressions to search for things here
+          // ===========================
+
+
+
+
+
+
+
+
+
         }
       }
     }
+
+
+    // ===============================
+    // After we look for labels, we use input elements' names and more to look for identifying info
+    // ===============================
+
 
     // First name
     if ($inputs[elt].name && ($inputs[elt].name === "firstName" || $inputs[elt].name.includes("firstName") || $inputs[elt].name.includes("FirstName"))) {
       $($inputs[elt]).val("Matt");
     }
+
+    // Middle name
+
 
     // Last name
     if ($inputs[elt].name && ($inputs[elt].name === "lastName")) {
@@ -96,3 +118,7 @@ function fillInForm() {
   }
 
 }
+
+
+
+$(document).on('click', '#add-job', addnewJob);
