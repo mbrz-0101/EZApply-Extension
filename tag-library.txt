@@ -4,15 +4,60 @@ Build our library of tage patterns here:
 First Name:
 
 Attribute "name" = /f(\w+|\s|\w+\s|)name/i
+Attribute First Name = “FirstName”
+Attribute “guestFirstName
 
 
 
 Last Name:
+
+Attribute Last Name = “lastName”
+Attribute Last Name = “LastName”
+Attribute “guestLastName”
 
 
 
 
 Email: 
 
+Attribute Email Address = “EmailAddress”
+Attribute “email”
 
+
+
+Phone:
+
+Attribute Phone = “phone”
+Attribute Phone Number = “PhoneNumber”
+Attribute “contact_number”
+
+
+
+Address 1:
+
+Attribute Address 1 = “address1”
+Attribute street1
+
+
+City:
+
+Attribute City = “city”
+
+
+
+State:
+
+
+
+
+Country:
+
+Attribute 
+
+
+
+ZIP:
+
+Attribute ZIP Code: = “zip”
+Attribute “zip_code”
 
