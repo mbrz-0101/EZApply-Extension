@@ -3,32 +3,36 @@ Build our library of tage patterns here:
 =======================================
 
 First Name:
+-------------------------------------------------
+REGEX = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
-Attribute "name" = /f(\w+|\s|\w+\s|)name/i
 Attribute First Name = “FirstName”
 Attribute “guestFirstName
-REGEX = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
+
 
 
 Middle Name:
+-------------------------------------------------
+REGEX = /mid(dle)?/i
 
 middle_name
 
 
 Last Name:
+-------------------------------------------------
+REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
 Attribute Last Name = “lastName”
 Attribute Last Name = “LastName”
 Attribute “guestLastName”
 
 
-REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
-
-
 Email: 
-<<<<<<< HEAD
+-------------------------------------------------
+REGEX = /e(\W)?mail/i
 
 Address1: 
+-------------------------------------------------
 REGEX = /add(ress)?/i
 REGEX  = /street/i
 
@@ -36,11 +40,14 @@ street1
 street2
 
 City:
+-------------------------------------------------
 REGEX = /city/i
 
 State:
+-------------------------------------------------
 
 Zip:
+-------------------------------------------------
 REGEX = /zip/i
 
 
@@ -85,6 +92,7 @@ Field of Study: studyfield
 Skill: skill
 
 Certificate: certificate
+
 =======
 <<<<<<< HEAD
 
