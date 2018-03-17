@@ -13,6 +13,7 @@ middle_name
 
 Last Name:
 REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
+>>>>>>> c543500863737e756f148a66d5a6bee4bb63a4b7
 
 
 
