@@ -26,6 +26,11 @@ lastName
 LastName
 guestLastName
 
+=======
+REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
+
+=======
+REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
 Email: 
 -------------------------------------------------
@@ -149,7 +154,7 @@ Skill: skill
 Certificate: certificate
 
 =======
-<<<<<<< HEAD
+
 
 Attribute Email Address = “EmailAddress”
 Attribute “email”
@@ -161,6 +166,9 @@ Phone:
 Attribute Phone = “phone”
 Attribute Phone Number = “PhoneNumber”
 Attribute “contact_number”
+Attribute “HomePhone”
+Attribute “MobilePhone”
+Attribute “WorkPhone”
 
 
 
@@ -183,7 +191,8 @@ State:
 
 Country:
 
-Attribute 
+Attribute Country =
+Attribute ResidenceLocation = “ResidenceLocation”
 
 
 
@@ -192,3 +201,25 @@ ZIP:
 Attribute ZIP Code: = “zip”
 Attribute “zip_code”
 
+
+
+
+
+
+Location:
+
+Attribute “Location”
+
+
+
+
+Education:
+
+Attribute “education_Institution”
+
+
+
+Education Level:
+
+
+DD Attribute: “StudyLevel”
