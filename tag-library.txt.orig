@@ -1,15 +1,23 @@
-=================================================
+=======================================
 Build our library of tage patterns here:
-=================================================
+=======================================
 
 First Name:
+<<<<<<< HEAD
+
+=======
 -------------------------------------------------
 REGEX = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
+>>>>>>> 7555210496b7c0114649e1f28ab601da0d7f35af
 
-FirstName
-guestFirstName
+Attribute First Name = “FirstName”
+Attribute “guestFirstName
+<<<<<<< HEAD
+=======
+REGEX = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
-First Name = nameComponent—uid43
+=======
+>>>>>>> 7555210496b7c0114649e1f28ab601da0d7f35af
 
 
 
@@ -21,43 +29,43 @@ middle_name
 
 
 Last Name:
+<<<<<<< HEAD
+
+=======
 -------------------------------------------------
 REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
+>>>>>>> 7555210496b7c0114649e1f28ab601da0d7f35af
 
-lastName
-LastName
-guestLastName
-Last Name = nameComponent—uid44
+Attribute Last Name = “lastName”
+Attribute Last Name = “LastName”
+Attribute “guestLastName”
 
+<<<<<<< HEAD
 =======
 REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
 =======
-REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
+>>>>>>> 7555210496b7c0114649e1f28ab601da0d7f35af
 
 Email: 
 -------------------------------------------------
 REGEX = /e(\W)?mail/i
-
-email
-
 
 Address1: 
 -------------------------------------------------
 REGEX = /add(ress)?/i
 REGEX  = /street/i
 
-Address Line 1 = addressComponentDeferred[I]—uid46
+<<<<<<< HEAD
+Email: 
 
+=======
 street1
 street2
 
 City:
 -------------------------------------------------
 REGEX = /city/i
-
-City = addressComponentDeferred[I]—uid47
-
 
 State:
 -------------------------------------------------
@@ -92,37 +100,10 @@ REGEX = //i
 State/Province
 
 
-School Name:
--------------------------------------------------
-REGEX = //i
 
-Institution
-education_institution
-
-
-School City:
--------------------------------------------------
-REGEX = //i
-
-City
-
-
-School Address:
--------------------------------------------------
-REGEX = //i
-
-
-Certificate:
--------------------------------------------------
-REGEX = //i
-
-Certification
-
-
-
-=================================================
+=======================================
 Local Storage item names:
-=================================================
+=======================================
 
 First Name: fname
 
@@ -163,7 +144,8 @@ Skill: skill
 Certificate: certificate
 
 =======
-
+<<<<<<< HEAD
+>>>>>>> 7555210496b7c0114649e1f28ab601da0d7f35af
 
 Attribute Email Address = “EmailAddress”
 Attribute “email”
@@ -210,7 +192,8 @@ ZIP:
 Attribute ZIP Code: = “zip”
 Attribute “zip_code”
 
-
+<<<<<<< HEAD
+=======
 
 
 
@@ -232,3 +215,5 @@ Education Level:
 
 
 DD Attribute: “StudyLevel”
+=======
+>>>>>>> 7555210496b7c0114649e1f28ab601da0d7f35af
