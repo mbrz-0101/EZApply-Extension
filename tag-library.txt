@@ -1,13 +1,13 @@
-=======================================
+=================================================
 Build our library of tage patterns here:
-=======================================
+=================================================
 
 First Name:
 -------------------------------------------------
 REGEX = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
-Attribute First Name = “FirstName”
-Attribute “guestFirstName
+FirstName
+guestFirstName
 
 
 
@@ -22,14 +22,17 @@ Last Name:
 -------------------------------------------------
 REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
-Attribute Last Name = “lastName”
-Attribute Last Name = “LastName”
-Attribute “guestLastName”
+lastName
+LastName
+guestLastName
 
 
 Email: 
 -------------------------------------------------
 REGEX = /e(\W)?mail/i
+
+email
+
 
 Address1: 
 -------------------------------------------------
@@ -76,10 +79,36 @@ REGEX = //i
 State/Province
 
 
+School Name:
+-------------------------------------------------
+REGEX = //i
 
-=======================================
+Institution
+
+
+School City:
+-------------------------------------------------
+REGEX = //i
+
+City
+
+
+School Address:
+-------------------------------------------------
+REGEX = //i
+
+
+Certificate:
+-------------------------------------------------
+REGEX = //i
+
+Certification
+
+
+
+=================================================
 Local Storage item names:
-=======================================
+=================================================
 
 First Name: fname
 
