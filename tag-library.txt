@@ -1,20 +1,35 @@
+=======================================
 Build our library of tage patterns here:
-
+=======================================
 
 First Name:
-
+-------------------------------------------------
+REGEX = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
 Attribute "name" = /f(\w+|\s|\w+\s|)name/i
+
+Attribute "name" = /f(\w+|\s|\w+\s|)name/i
+
 Attribute First Name = “FirstName”
 Attribute “guestFirstName
 =======
 REGEX = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
+=======
+REGEX = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
+
+
+Middle Name:
+-------------------------------------------------
+REGEX = /mid(dle)?/i
+
+middle_name
 
 
 Last Name:
-
+-------------------------------------------------
+REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
 Attribute Last Name = “lastName”
 Attribute Last Name = “LastName”
@@ -23,10 +38,102 @@ Attribute “guestLastName”
 =======
 REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
-
-
+=======
+REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
 Email: 
+-------------------------------------------------
+REGEX = /e(\W)?mail/i
+
+Address1: 
+-------------------------------------------------
+REGEX = /add(ress)?/i
+REGEX  = /street/i
+
+street1
+street2
+
+City:
+-------------------------------------------------
+REGEX = /city/i
+
+State:
+-------------------------------------------------
+REGEX = //i
+
+State/Province
+
+
+Zip:
+-------------------------------------------------
+REGEX = /zip/i
+
+
+Company Name:
+-------------------------------------------------
+REGEX = //i
+
+Employer
+
+
+Position:
+-------------------------------------------------
+REGEX = //i 
+
+Job Function
+
+
+Company State:
+-------------------------------------------------
+REGEX = //i
+
+State/Province
+
+
+
+=======================================
+Local Storage item names:
+=======================================
+
+First Name: fname
+
+Last Name: lname
+
+Email: email
+
+Phone: phonenumber
+
+Address: streetaddress
+
+City: city
+
+Zip code: zipcode
+
+State: state
+
+Company Name: companyname
+ 
+Company Address: companyaddress
+
+Company Phone: companyphone
+
+Position: companyposition
+
+School Name: schoolname
+
+School Address: schooladdress
+
+Start Year: startyear
+
+End Year: endyear
+
+Field of Study: studyfield
+
+Skill: skill
+
+Certificate: certificate
+
+=======
 
 
 Attribute Email Address = “EmailAddress”
@@ -74,7 +181,7 @@ ZIP:
 Attribute ZIP Code: = “zip”
 Attribute “zip_code”
 
-=======
+
 
 
 
