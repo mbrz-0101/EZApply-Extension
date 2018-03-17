@@ -26,8 +26,11 @@ function fillInForm() {
           // ===========================
           // We will be using our Regular Expressions to search for things here
           // ===========================
-
-
+          if (($labels[label].innerText)) {
+            $($inputs[elt].val(localStorage.getItem('fname')));
+          } else if (userFirstName.test($labels[label].innerText)) {
+            $($inputs[elt].val(localStorage.getItem('lname')));
+          }
 
 
 
@@ -118,7 +121,3 @@ function fillInForm() {
   }
 
 }
-
-
-
-$(document).on('click', '#add-job', addnewJob);
