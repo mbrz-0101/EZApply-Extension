@@ -89,6 +89,7 @@ School Name:
 REGEX = //i
 
 Institution
+education_institution
 
 
 School City:
