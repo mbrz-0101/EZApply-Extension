@@ -37,20 +37,21 @@ function fillInForm() {
 
 
   for (elt in $inputs) {
-    
+
     for (label in $labels) {
       if ($labels[label].attributes && $labels[label].attributes["for"]) {
         if ($labels[label].attributes["for"].nodeValue === $inputs[elt].id || $labels[label].attributes["for"].nodeValue === $inputs[elt].name) {
+          console.log($($inputs[elt]).outerHTML);
           $($inputs[elt]).val($labels[label].innerText);
 
           // ===========================
           // We will be using our Regular Expressions to search for things here
           // ===========================
-          if (($labels[label].innerText)) {
-            $($inputs[elt].val(localStorage.getItem('fname')));
-          } else if (userFirstName.test($labels[label].innerText)) {
-            $($inputs[elt].val(localStorage.getItem('lname')));
-          }
+          // if (($labels[label].innerText)) {
+          //   $($inputs[elt]).val(localStorage.getItem('fname')));
+          // } else if (userFirstName.test($labels[label].innerText)) {
+          //   $($inputs[elt]).val(localStorage.getItem('lname')));
+          // }
 
 
 
@@ -71,6 +72,10 @@ function fillInForm() {
     // First name
     if ($inputs[elt].name && ($inputs[elt].name === "firstName" || $inputs[elt].name.includes("firstName") || $inputs[elt].name.includes("FirstName"))) {
       $($inputs[elt]).val("Matt");
+
+
+      // This is how to display input element as a string to test against REGEX
+      **************$inputs[elt].outerHTML)*******************
     }
 
     // Middle name
@@ -79,15 +84,18 @@ function fillInForm() {
     // Last name
     if ($inputs[elt].name && ($inputs[elt].name === "lastName")) {
       $($inputs[elt]).val("Brzowski");
+      console.log($($inputs[elt]).outerHTML);
     }
 
     // Full name
     if ($inputs[elt].name && ($inputs[elt].name === "name")) {
       $($inputs[elt].val("Matt Brzowski"));
+
     }
     // Email
     if ($inputs[elt].name && ($inputs[elt].name === "email")) {
       $($inputs[elt]).val("my@email.online");
+      console.log($($inputs[elt]).outerHTML);
     }
     
     // Address
