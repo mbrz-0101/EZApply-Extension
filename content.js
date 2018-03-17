@@ -1,5 +1,12 @@
 console.log("This content script is working");
-
+const fNameRegex = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i;
+const lNameRegex = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i;
+const emailRegex = /e(\W)?mail/i;
+const phoneRegex;
+const addressRegex;
+const cityRegex;
+const stateRegex;
+const zipRegex;
 
 
 
@@ -35,7 +42,6 @@ function fillInForm() {
     for (label in $labels) {
       if ($labels[label].attributes && $labels[label].attributes["for"]) {
         if ($labels[label].attributes["for"].nodeValue === $inputs[elt].id || $labels[label].attributes["for"].nodeValue === $inputs[elt].name) {
-          console.log($($inputs[elt]).outerHTML);
           $($inputs[elt]).val($labels[label].innerText);
 
           // ===========================
@@ -64,21 +70,16 @@ function fillInForm() {
 
 
     // First name
-    if ($inputs[elt].name && ($inputs[elt].name === "firstName" || $inputs[elt].name.includes("firstName") || $inputs[elt].name.includes("FirstName"))) {
+    if (fNameRegex.test($inputs[elt].outerHTML)) {
       $($inputs[elt]).val("Matt");
-
-
-      // This is how to display input element as a string to test against REGEX
-      **************$inputs[elt].outerHTML)*******************
     }
 
     // Middle name
 
 
     // Last name
-    if ($inputs[elt].name && ($inputs[elt].name === "lastName")) {
+    if (lNameRegex.test($inputs[elt].outerHTML)) {
       $($inputs[elt]).val("Brzowski");
-      console.log($($inputs[elt]).outerHTML);
     }
 
     // Full name
@@ -87,9 +88,8 @@ function fillInForm() {
 
     }
     // Email
-    if ($inputs[elt].name && ($inputs[elt].name === "email")) {
+    if (emailRegex.test($inputs[elt].outerHTML)) {
       $($inputs[elt]).val("my@email.online");
-      console.log($($inputs[elt]).outerHTML);
     }
     
     // Address

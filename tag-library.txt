@@ -26,11 +26,6 @@ lastName
 LastName
 guestLastName
 
-=======
-REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
-
-=======
-REGEX = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i
 
 Email: 
 -------------------------------------------------
