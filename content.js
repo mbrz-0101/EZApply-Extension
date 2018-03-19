@@ -1,16 +1,15 @@
 console.log("This content script is working");
-const fNameRegex = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i;
-const lNameRegex = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i;
-const emailRegex = /e(\W)?mail/i;
-const phoneRegex;
-const addressRegex;
-const cityRegex;
-const stateRegex;
-const zipRegex;
-
-
 
 function fillInForm() {
+  const fNameRegex = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i;
+  const lNameRegex = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i;
+  const emailRegex = /e(\W)?mail/i;
+  const phoneRegex;
+  const addressRegex;
+  const cityRegex;
+  const stateRegex;
+  const zipRegex;
+
   let $inputs = $("input");
   let $labels = $("label");
   let fName = JSON.parse(localStorage.getItem('fname'));
@@ -91,7 +90,7 @@ function fillInForm() {
     if (emailRegex.test($inputs[elt].outerHTML)) {
       $($inputs[elt]).val("my@email.online");
     }
-    
+
     // Address
 
     // Address 2
@@ -110,11 +109,11 @@ function fillInForm() {
     // Job Duties 1
 
     // Job Phone 1
-    
+
     // Job Supervisor 1 
 
     // Job Address 1
-    
+
     // Job Address 2
 
     // Job City 1
@@ -134,7 +133,7 @@ function fillInForm() {
 
 
     // Certification Title 1
-    
+
     // Certification Detail 1
 
 
