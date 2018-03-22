@@ -4,14 +4,26 @@ function fillInForm() {
   const fNameRegex = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i;
   const lNameRegex = /l(ast)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i;
   const emailRegex = /e(\W)?mail/i;
-  const phoneRegex;
-  const addressRegex;
-  const cityRegex;
-  const stateRegex;
-  const zipRegex;
+  const phoneRegex = /phone/i;
+  const addressRegex = /address/i;
+  const streetRegex = /street/i;
+  const cityRegex = /city/i;
+  const stateRegex = /state/i;
+  const zipRegex = /zip/i;
+  const companyNameRegex;
+  const companyAddressRegex;
+  const companyPhoneRegex;
+  const companyPositionRegex;
+  const schoolNameRegex;
+  const schoolAddressRegex;
+  const startYearRegex;
+  const fieldOfStudyRegex;
+  const skillRegex;
+  const certificateRegex;
 
   let $inputs = $("input");
   let $labels = $("label");
+
   let fName = JSON.parse(localStorage.getItem('fname'));
   let lName = JSON.parse(localStorage.getItem('lname'));
   let email = JSON.parse(localStorage.getItem('email'));
@@ -35,22 +47,43 @@ function fillInForm() {
   console.log($inputs);
   console.log($labels);
 
-
+  // loop through input elements
   for (elt in $inputs) {
 
+    // loop through label elements
     for (label in $labels) {
+
+      // Ensures the current label element has a for attribute
       if ($labels[label].attributes && $labels[label].attributes["for"]) {
+
+        // If the for attribute matches the input element's id, check regex
         if ($labels[label].attributes["for"].nodeValue === $inputs[elt].id || $labels[label].attributes["for"].nodeValue === $inputs[elt].name) {
+
           $($inputs[elt]).val($labels[label].innerText);
 
           // ===========================
           // We will be using our Regular Expressions to search for things here
           // ===========================
-          // if (($labels[label].innerText)) {
-          //   $($inputs[elt]).val(localStorage.getItem('fname')));
-          // } else if (userFirstName.test($labels[label].innerText)) {
-          //   $($inputs[elt]).val(localStorage.getItem('lname')));
-          // }
+          const labelText = $label[labels].innerText;
+          const input = $($inputs[elt]);
+
+          if (fNameRegex.test(labelText)) {
+            input.val(fName);
+          } else if (lNameRegex.test(labelText)) {
+            input.val(lName);
+          } else if (emailRegex.test(labelText)) {
+            input.val(email)
+          } else if (phoneRegex.test(labelText)) {
+            input.val(phoneNumber);
+          } else if (addressRegex.test(labelText) || streetRegex.test(labelText)) {
+            input.val(streetAddress);
+          } else if (cityRegex.test(labelText)) {
+            input.val(city);
+          } else if (stateRegex.test(labelText)) {
+            input.val(state);
+          } else if () {
+
+          }
 
 
 
@@ -64,7 +97,7 @@ function fillInForm() {
 
 
     // ===============================
-    // After we look for labels, we use input elements' names and more to look for identifying info
+    // After we look for labels, we use input elements to look for identifying info
     // ===============================
 
 
