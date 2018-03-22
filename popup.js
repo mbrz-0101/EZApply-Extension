@@ -1,4 +1,7 @@
-document.getElementById("work-button").addEventListener('click', executeTheseFunctions);
+let el = document.getElementById('work-button');
+if (el) {
+  document.getElementById('work-button').addEventListener('click', executeTheseFunctions);
+}
 
 function executeTheseFunctions(e) {
 

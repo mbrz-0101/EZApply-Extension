@@ -52,7 +52,9 @@ function fillInForm() {
   // loop through input elements
   for (elt in $inputs) {
 
-    // loop through label elements
+    // ==============================
+    // First we use Labels to test against our Regular Expressions as not every page has labels
+    // ==============================
     for (label in $labels) {
 
       // Ensures the current label element has a for attribute
@@ -64,9 +66,9 @@ function fillInForm() {
           $($inputs[elt]).val($labels[label].innerText);
 
           // ===========================
-          // We will be using our Regular Expressions to search for things here
+          // Use Regex to test labels and autofill
           // ===========================
-          const labelText = $label[labels].innerText;
+          const labelText = $labels[label].innerText;
           const input = $($inputs[elt]);
 
           if (fNameRegex.test(labelText)) {
@@ -108,13 +110,6 @@ function fillInForm() {
           } else if (certificateRegex.test(labelText)) {
             input.val(certificate);
           }
-
-
-
-
-
-
-
         }
       }
     }
@@ -127,75 +122,92 @@ function fillInForm() {
 
     // First name
     if (fNameRegex.test($inputs[elt].outerHTML)) {
-      $($inputs[elt]).val("Matt");
+      $($inputs[elt]).val(fName);
     }
-
-    // Middle name
-
 
     // Last name
     if (lNameRegex.test($inputs[elt].outerHTML)) {
-      $($inputs[elt]).val("Brzowski");
+      $($inputs[elt]).val(lName);
     }
 
-    // Full name
-    if ($inputs[elt].name && ($inputs[elt].name === "name")) {
-      $($inputs[elt].val("Matt Brzowski"));
-
-    }
     // Email
     if (emailRegex.test($inputs[elt].outerHTML)) {
-      $($inputs[elt]).val("my@email.online");
+      $($inputs[elt]).val(email);
     }
 
     // Address
-
-    // Address 2
+    if (addressRegex.test($inputs[elt].outerHTML) || streetRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(streetAddress);
+    }
 
     // City
+    if (cityRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(city);
+    }
 
     // State
+    if (stateRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(state);
+    }
 
     // Zipcode
+    if (zipRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(zipCode);
+    }
 
+    // Company Name
+    if (companyNameRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(companyName);
+    }
 
-    // Job Title 1
+    // Company Address
+    if (companyAddressRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(companyAddress);
+    }
 
-    // Job Company 1
+    // Company Phone
+    if (companyPhoneRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(companyPhone);
+    }
 
-    // Job Duties 1
+    // Company Position
+    if (companyPosition.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(companyPosition);
+    }
 
-    // Job Phone 1
+    // School Name
+    if (schoolNameRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(schoolName);
+    }
 
-    // Job Supervisor 1 
+    // School Address
+    if (schoolAddressRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(schoolAddress);
+    }
 
-    // Job Address 1
+    // Start Year
+    if (startYearRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(startYear);
+    }
 
-    // Job Address 2
+    // End Year
+    if (endYearRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(endYear);
+    }
 
-    // Job City 1
+    // Field of Study
+    if (fieldOfStudyRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(fieldOfStudy);
+    }
 
-    // Job State 1
+    // Skill 
+    if (skillRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(skill);
+    }
 
-    // Job Zip 1
-
-
-    // School Name 1
-
-    // Degree 
-
-    // Major
-
-    // GPA
-
-
-    // Certification Title 1
-
-    // Certification Detail 1
-
-
-
-    // Request additional fields button?
+    // Certification
+    if (certificateRegex.test($inputs[elt].outerHTML)) {
+      $($inputs[elt]).val(certificate);
+    }
   }
-
 }
