@@ -22,9 +22,6 @@ function fillInForm() {
   const skillRegex;
   const certificateRegex;
 
-  let $inputs = $("input");
-  let $labels = $("label");
-
   let fName = localStorage.getItem('fname');
   let lName = localStorage.getItem('lname');
   let email = localStorage.getItem('email');
@@ -45,7 +42,8 @@ function fillInForm() {
   let skill = localStorage.getItem('skill');
   let certificate = localStorage.getItem('certificate');
 
-
+  let $inputs = $("input");
+  let $labels = $("label");
   console.log($inputs);
   console.log($labels);
 
@@ -62,8 +60,6 @@ function fillInForm() {
 
         // If the for attribute matches the input element's id, check regex
         if ($labels[label].attributes["for"].nodeValue === $inputs[elt].id || $labels[label].attributes["for"].nodeValue === $inputs[elt].name) {
-
-          $($inputs[elt]).val($labels[label].innerText);
 
           // ===========================
           // Use Regex to test labels and autofill
