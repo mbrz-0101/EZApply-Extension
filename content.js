@@ -25,25 +25,25 @@ function fillInForm() {
   let $inputs = $("input");
   let $labels = $("label");
 
-  let fName = JSON.parse(localStorage.getItem('fname'));
-  let lName = JSON.parse(localStorage.getItem('lname'));
-  let email = JSON.parse(localStorage.getItem('email'));
-  let phoneNumber = JSON.parse(localStorage.getItem('phonenumber'));
-  let streetAddress = JSON.parse(localStorage.getItem('streetAddress'));
-  let city = JSON.parse(localStorage.getItem('city'));
-  let state = JSON.parse(localStorage.getItem('state'));
-  let zipCode = JSON.parse(localStorage.getItem('zipcode'));
-  let companyName = JSON.parse(localStorage.getItem('companyname'));
-  let companyAddress = JSON.parse(localStorage.getItem('companyaddress'));
-  let companyPhone = JSON.parse(localStorage.getItem('companyphone'));
-  let companyPosition = JSON.parse(localStorage.getItem('companyposition'));
-  let schoolName = JSON.parse(localStorage.getItem('schoolname'));
-  let schoolAddress = JSON.parse(localStorage.getItem('schooladdress'));
-  let startYear = JSON.parse(localStorage.getItem('startyear'));
-  let endYear = JSON.parse(localStorage.getItem('endyear'));
-  let fieldOfStudy = JSON.parse(localStorage.getItem('studyfield'));
-  let skill = JSON.parse(localStorage.getItem('skill'));
-  let certificate = JSON.parse(localStorage.getItem('certificate'));
+  let fName = localStorage.getItem('fname');
+  let lName = localStorage.getItem('lname');
+  let email = localStorage.getItem('email');
+  let phoneNumber = localStorage.getItem('phonenumber');
+  let streetAddress = localStorage.getItem('streetAddress');
+  let city = localStorage.getItem('city');
+  let state = localStorage.getItem('state');
+  let zipCode = localStorage.getItem('zipcode');
+  let companyName = localStorage.getItem('companyname');
+  let companyAddress = localStorage.getItem('companyaddress');
+  let companyPhone = localStorage.getItem('companyphone');
+  let companyPosition = localStorage.getItem('companyposition');
+  let schoolName = localStorage.getItem('schoolname');
+  let schoolAddress = localStorage.getItem('schooladdress');
+  let startYear = localStorage.getItem('startyear');
+  let endYear = localStorage.getItem('endyear');
+  let fieldOfStudy = localStorage.getItem('studyfield');
+  let skill = localStorage.getItem('skill');
+  let certificate = localStorage.getItem('certificate');
 
 
   console.log($inputs);
