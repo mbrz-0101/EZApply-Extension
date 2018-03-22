@@ -17,6 +17,7 @@ function fillInForm() {
   const schoolNameRegex;
   const schoolAddressRegex;
   const startYearRegex;
+  const endYearRegex;
   const fieldOfStudyRegex;
   const skillRegex;
   const certificateRegex;
@@ -39,6 +40,7 @@ function fillInForm() {
   let schoolName = JSON.parse(localStorage.getItem('schoolname'));
   let schoolAddress = JSON.parse(localStorage.getItem('schooladdress'));
   let startYear = JSON.parse(localStorage.getItem('startyear'));
+  let endYear = JSON.parse(localStorage.getItem('endyear'));
   let fieldOfStudy = JSON.parse(localStorage.getItem('studyfield'));
   let skill = JSON.parse(localStorage.getItem('skill'));
   let certificate = JSON.parse(localStorage.getItem('certificate'));
@@ -81,8 +83,30 @@ function fillInForm() {
             input.val(city);
           } else if (stateRegex.test(labelText)) {
             input.val(state);
-          } else if () {
-
+          } else if (companyNameRegex.test(labelText)) {
+            input.val(companyName);
+          } else if (companyAddressRegex.test(labelText)) {
+            input.val(companyAddress);
+          } else if (companyPhoneRegex.test(labelText)) {
+            input.val(companyPhone);
+          } else if (companyPositionRegex.test(labelText)) {
+            input.val(companyPosition);
+          } else if (schoolNameRegex.test(labelText)) {
+            input.val(schoolName);
+          } else if (schoolAddressRegex.test(labelText)) {
+            input.val(schoolAddress);
+          } else if (startYearRegex.test(labelText)) {
+            input.val(startYear);
+          } else if (endYearRegex.test(labelText)) {
+            input.val(endYear);
+          } else if (companyAddressRegex.test(labelText)) {
+            input.val(companyAddress);
+          } else if (fieldOfStudyRegex.test(labelText)) {
+            input.val(fieldOfStudy);
+          } else if (skillRegex.test(labelText)) {
+            input.val(skill);
+          } else if (certificateRegex.test(labelText)) {
+            input.val(certificate);
           }
 
 
