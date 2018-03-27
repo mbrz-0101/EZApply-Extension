@@ -1,0 +1,21 @@
+.col-12{
+	font-size: small;
+	text-align: center;
+}
+p{
+	margin-bottom: 0px!important;
+	font-size: small;
+}
+.btn{
+	font-size: small;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	letter-spacing: 2px;
+	font-weight: bold;
+	background-color: #bd5d38;
+}
+a{
+	font-size: xx-small;
+}
+.container{
+	margin-right: 15px!important;
+}
