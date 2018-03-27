@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="EZApply Resume">
+    <meta name="Ryan" content="EZApply Resume">
+
+    <title>EZApply Resume</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="resumevendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="resumevendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="resumevendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="resumevendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="resumecss/resume.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resumecss/new.css">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" >
+        <span class="d-block d-lg-none">EZApply Resume</span>
+        <span class="d-none d-lg-block">
+          <!-- when person clicks on image they can upload their own -->
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/yourface.png" alt="">
+          <div class="p-image">
+         <i class="fa fa-camera upload-button"></i>
+          <input class="file-upload" type="file" accept="image/*"/>
+       </div>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#employment">Employment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+        </ul>
+      </div>
+      <hr>
+     <footer>
+      <div class="container" id="footerresume">
+        <p>&copy; EZApply 2018  All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="list-inline-item" id="problem">
+            <a href="emailform.html" target="_blank">Report A Problem</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    </nav>
+      <div class="container-fluid p-0">
+        <div class="my-auto">
+          <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+            <h2>About</h2>
+          </div>
+          <form>
+      <!-- where they can add their personal information -->
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="contact">First Name</label>
+                  <input type="fname" class="form-control" id="fname" aria-describedby="fname" placeholder="Enter First Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="contact">Last Name</label>
+                  <input type="Lname" class="form-control" id="lname" aria-describedby="lname" placeholder="Enter Last Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="contact">Email</label>
+                 <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="contact">Phone Number</label>
+                <input type="phonenumber" class="form-control" id="phonenumber" aria-describedby="phonenumber" placeholder="Main Phone Number">
+              </div>
+              <div class="form-group col-md-6">
+                 <label for="currentAddress">Street Address</label>
+                <input type="streetaddress" class="form-control" id="streetaddress" placeholder="Street Address">
+              </div>
+              <div class="form-group col-md-6">
+                 <label for="city">City</label>
+                <input type="city" class="form-control" id="city" placeholder="City">
+              </div>
+               <div class="form-group col-md-6">
+                 <label for="zipcode">Zip Code</label>
+                <input type="zipcode" class="form-control" id="zipcode" placeholder="Zip Code">
+              </div>
+              <div class="form-group col-md-6">
+                 <label for="state">State</label>
+                <input type="state" class="form-control" id="state" placeholder="State">
+              </div>
+          </div>
+          <!-- Where they can add their employment history -->
+          <div class="my-auto">
+          <section class="resume-section p-3 p-lg-5 d-flex d-column" id="employment">
+            <h2>Employment History</h2>
+          </div>
+          <div class="form-row" id="JOBS">
+             <div class="form-group col-md-6">
+                  <label for="companyname">Company Name</label>
+                <input type="companyname" class="form-control" id="companyname" aria-describedby="companyname" placeholder="Company Name">
+            </div>
+             <div class="form-group col-md-6">
+                  <label for="companyaddress">Company Address</label>
+                <input type="companyaddress" class="form-control" id="companyaddress" aria-describedby="companyaddress" placeholder="Company Address">
+            </div>
+             <div class="form-group col-md-6">
+                  <label for="companyphone">Company Phone</label>
+                <input type="companyphone" class="form-control" id="companyphone" aria-describedby="companyphone" placeholder="Company Phone">
+            </div>
+            <div class="form-group col-md-6">
+                  <label for="companyrole">Your Position</label>
+                 <input type="companyrole" class="form-control" id="companyposition" aria-describedby="companyrole" placeholder="What Position Did You Have?">
+            </div>
+          </div>
+          <div class="form-row">
+            <button type="button" class="btn btn-dark" id="addjob">Add Another Job</button>
+          </div>
+          <!-- EDUCATION -->
+           <div class="my-auto">
+              <section class="resume-section p-3 p-lg-5 d-flex d-column" id="education">
+                <h2>Education</h2>
+          </div>
+          <div class="form-row" id="Schools">
+             <div class="form-group col-md-6">
+                  <label for="schoolname">School name</label>
+                <input type="schoolname" class="form-control" id="schoolname" aria-describedby="schoolname" placeholder="School Name">
+            </div>
+             <div class="form-group col-md-6">
+                  <label for="schooladdress">School Address</label>
+                <input type="schooladdress" class="form-control" id="schooladdress" aria-describedby="schooladdress" placeholder="School Address">
+            </div>
+             <div class="form-group col-md-6">
+                  <label for="startyear">Start Year</label>
+                <input type="fromyear" class="form-control" id="startyear" aria-describedby="fromyear" placeholder="Start Year">
+            </div>
+            <div class="form-group col-md-6">
+                  <label for="endyear">End Year</label>
+                 <input type="endyear" class="form-control" id="endyear" aria-describedby="endyear" placeholder="End Year">
+            </div>
+            <div class="form-group col-md-6">
+                  <label for="studyfield">Field Of Study</label>
+                 <input type="studyfield" class="form-control" id="studyfield" aria-describedby="studyfield" placeholder="In What Field Did You Study?">
+            </div>
+          </div>
+           <div class="form-row">
+            <button type="button" class="btn btn-dark" id="addSchool">Add Another School</button>
+          </div>
+           <div class="my-auto">
+              <section class="resume-section p-3 p-lg-5 d-flex d-column" id="skills">
+                <h2>Skills And Certificates</h2>
+          </div>
+          <div class="form-row" id="Skills">
+             <div class="form-group col-md-6">
+                  <label for="skill">Skill</label>
+                <input type="skill" class="form-control" id="skill" aria-describedby="skill" placeholder="Add A Skill">
+            </div>
+          </div>
+            <div class="form-row">
+              <button type="button" class="btn btn-dark" id="addSkill">Add Another Skill</button>
+            </div>
+          <div class="form-row" id="Certificates">
+             <div class="form-group col-md-6">
+                  <label for="Certificates">Certificate</label>
+                <input type="certificate" class="form-control" id="certificate" aria-describedby="certificate" placeholder="certificate">
+            </div>
+          </div>
+          <div class="form-row">
+            <button type="button" class="btn btn-dark" id="addcertificate">Add Another Certificate</button>
+          </div>
+           <!--  <div class="form-row">
+                <label for="certificatefile">Upload Your Certificates</label>
+                <input type="file" class="form-control-file" id="certificatefile">
+            </div> -->
+            <div class="form-row" id="Savebutton">
+             <button type="submit" class="btn btn-dark" id="saveform">Save</button>
+          </div>
+          </div>
+          </form>
+
+    </div>
+    <!-- military service? -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="resumevendor/jquery/jquery.min.js"></script>
+    <script src="resumevendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="resumevendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="resumejs/resume.js"></script>
+
+  </body>
+
+</html>
