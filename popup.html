@@ -5,19 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="popupstyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
   <title>Document</title>
 </head>
 
-<body onload="setupbutton()">
-  <button id="work-button">Autofill this application</button>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p>Use EZApply to fill this Form</p>
+    </div>
+  </div>
+  <button type="button" class="btn btn-secondary btn-lg btn-block" id="work-button">Fill Form</button>  
   <br>
-  <br>
-  <br>
+  <div class="row">
+    <div class="col-12">
+      <p>Need to edit your form?</p> 
+    </div>
+  </div>
   <a href="http://ezapply-com.stackstaging.com/resume.php" target="_blank">
-    <button>Edit Form</button>
+    <button type="button" class="btn btn-secondary btn-lg btn-block">Edit</button> 
   </a>
-
-
+  <div class="row">
+    <div class="col-12">
+      <a href="http://ezapply-com.stackstaging.com/emailform.php" target="_blank">Report A Problem</a>
+    </div>
+  </div>
+</div>
   <script src="popup.js"></script>
 </body>
 
