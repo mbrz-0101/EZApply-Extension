@@ -81,8 +81,8 @@
       //-----------Education
       var schoolname = $('#schoolname').val().trim();
       var schooladdress = $('#schooladdress').val().trim();
-      var startyear = $('#startyear').val().trim();
-      var endyear = $('#endyear').val().trim();
+      // var startyear = $('#startyear').val().trim();
+      // var endyear = $('#endyear').val().trim();
       var studyfield = $('#studyfield').val().trim();
 
 
