@@ -227,3 +227,55 @@ Education Level:
 
 
 DD Attribute: “StudyLevel”
+
+Work History Company Name:
+
+“WORK_HISTORY_companyName”
+“Company Name”
+“companyname”
+“Company”
+“Organization”
+
+
+Starting Pay:
+
+“Final Salary”
+
+
+Final Pay:
+
+“Last Salary”
+
+“WORK_HISTORY_finalRatePay”
+
+
+Reason for leaving:
+
+“WORK_HISTORY_reasonForLeaving”
+“Reason for Leaving”
+
+
+Description:
+
+“WORK_HISTORY_jobDescription”
+“Describe the work that you did”
+
+Job Title:
+
+“Job Title”
+“jobtitle”
+
+
+Name of Supervisor:
+
+“Name of Supervisor”
+
+
+Start Date:
+
+“startdate”
+
+
+End Date:
+
+
