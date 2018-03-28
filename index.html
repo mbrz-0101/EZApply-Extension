@@ -5,221 +5,185 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="EZApply Resume">
-    <meta name="Ryan" content="EZApply Resume">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>EZApply Resume</title>
+    <title>EZApply</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="resumevendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="resumevendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="resumevendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="resumevendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="resumecss/resume.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="resumecss/new.css">
+    <link href="css/new-age.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/new.css">
 
   </head>
 
   <body id="page-top">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" >
-        <span class="d-block d-lg-none">EZApply Resume</span>
-        <span class="d-none d-lg-block">
-          <!-- when person clicks on image they can upload their own -->
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/yourface.png" alt="">
-          <div class="p-image">
-         <i class="fa fa-camera upload-button"></i>
-          <input class="file-upload" type="file" accept="image/*"/>
-       </div>
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#employment">Employment</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">EZApply</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#problem">Report A Problem</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <hr>
-     <footer>
-      <div class="container" id="footerresume">
-        <p>&copy; EZApply 2018  All Rights Reserved.</p>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li class="list-inline-item" id="problem">
-            <a href="emailform.html" target="_blank">Report A Problem</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
     </nav>
-      <div class="container-fluid p-0">
-        <div class="my-auto">
-          <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-            <h2>About</h2>
-          </div>
-          <form>
-      <!-- where they can add their personal information -->
-          <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="contact">First Name</label>
-                  <input type="fname" class="form-control" id="fname" aria-describedby="fname" placeholder="Enter First Name">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="contact">Last Name</label>
-                  <input type="Lname" class="form-control" id="lname" aria-describedby="lname" placeholder="Enter Last Name">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="contact">Email</label>
-                 <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="contact">Phone Number</label>
-                <input type="phonenumber" class="form-control" id="phonenumber" aria-describedby="phonenumber" placeholder="Main Phone Number">
-              </div>
-              <div class="form-group col-md-6">
-                 <label for="currentAddress">Street Address</label>
-                <input type="streetaddress" class="form-control" id="streetaddress" placeholder="Street Address">
-              </div>
-              <div class="form-group col-md-6">
-                 <label for="city">City</label>
-                <input type="city" class="form-control" id="city" placeholder="City">
-              </div>
-               <div class="form-group col-md-6">
-                 <label for="zipcode">Zip Code</label>
-                <input type="zipcode" class="form-control" id="zipcode" placeholder="Zip Code">
-              </div>
-              <div class="form-group col-md-6">
-                 <label for="state">State</label>
-                <input type="state" class="form-control" id="state" placeholder="State">
-              </div>
-          </div>
-          <!-- Where they can add their employment history -->
-          <div class="my-auto">
-          <section class="resume-section p-3 p-lg-5 d-flex d-column" id="employment">
-            <h2>Employment History</h2>
-          </div>
-          <div class="form-row" id="JOBS">
-             <div class="form-group col-md-6">
-                  <label for="companyname">Company Name</label>
-                <input type="companyname" class="form-control" id="companyname" aria-describedby="companyname" placeholder="Company Name">
-            </div>
-             <div class="form-group col-md-6">
-                  <label for="companyaddress">Company Address</label>
-                <input type="companyaddress" class="form-control" id="companyaddress" aria-describedby="companyaddress" placeholder="Company Address">
-            </div>
-             <div class="form-group col-md-6">
-                  <label for="companyphone">Company Phone</label>
-                <input type="companyphone" class="form-control" id="companyphone" aria-describedby="companyphone" placeholder="Company Phone">
-            </div>
-            <div class="form-group col-md-6">
-                  <label for="companyrole">Your Position</label>
-                 <input type="companyrole" class="form-control" id="companyposition" aria-describedby="companyrole" placeholder="What Position Did You Have?">
-            </div>
-          </div>
-          <!-- <div class="form-row">
-            <button type="button" class="btn btn-dark" id="addjob">Add Another Job</button>
-          </div> -->
-          <!-- EDUCATION -->
-           <div class="my-auto">
-              <section class="resume-section p-3 p-lg-5 d-flex d-column" id="education">
-                <h2>Education</h2>
-          </div>
-          <div class="form-row" id="Schools">
-             <div class="form-group col-md-6">
-                  <label for="schoolname">School name</label>
-                <input type="schoolname" class="form-control" id="schoolname" aria-describedby="schoolname" placeholder="School Name">
-            </div>
-             <div class="form-group col-md-6">
-                  <label for="schooladdress">School Address</label>
-                <input type="schooladdress" class="form-control" id="schooladdress" aria-describedby="schooladdress" placeholder="School Address">
-            </div>
-             <div class="form-group col-md-6">
-                  <label for="startyear">Start Year</label>
-                <input type="fromyear" class="form-control" id="startyear" aria-describedby="fromyear" placeholder="Start Year">
-            </div>
-            <div class="form-group col-md-6">
-                  <label for="endyear">End Year</label>
-                 <input type="endyear" class="form-control" id="endyear" aria-describedby="endyear" placeholder="End Year">
-            </div>
-            <div class="form-group col-md-6">
-                  <label for="studyfield">Field Of Study</label>
-                 <input type="studyfield" class="form-control" id="studyfield" aria-describedby="studyfield" placeholder="In What Field Did You Study?">
-            </div>
-          </div>
-           <!-- <div class="form-row">
-            <button type="button" class="btn btn-dark" id="addSchool">Add Another School</button>
-          </div> -->
-           <div class="my-auto">
-              <section class="resume-section p-3 p-lg-5 d-flex d-column" id="skills">
-                <h2>Skills And Certificates</h2>
-          </div>
-          <div class="form-row" id="Skills">
-             <div class="form-group col-md-6">
-                  <label for="skill">Skill</label>
-                <input type="skill" class="form-control" id="skill" aria-describedby="skill" placeholder="Add A Skill">
-            </div>
-          </div>
-           <!--  <div class="form-row">
-              <button type="button" class="btn btn-dark" id="addSkill">Add Another Skill</button>
-            </div> -->
-          <div class="form-row" id="Certificates">
-             <div class="form-group col-md-6">
-                  <label for="Certificates">Certificate</label>
-                <input type="certificate" class="form-control" id="certificate" aria-describedby="certificate" placeholder="certificate">
-            </div>
-          </div>
-          <!-- <div class="form-row">
-            <button type="button" class="btn btn-dark" id="addcertificate">Add Another Certificate</button>
-          </div> -->
-           <!--  <div class="form-row">
-                <label for="certificatefile">Upload Your Certificates</label>
-                <input type="file" class="form-control-file" id="certificatefile">
-            </div> -->
-            <div class="form-row" id="Savebutton">
-             <button type="submit" class="btn btn-dark" id="saveform">Save</button>
-          </div>
-          </div>
-          </form>
 
-    </div>
-    <!-- military service? -->
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">EZApply is all about Security & Convenience!</h1>
+              <a href="resume.html" target= "_blank" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+            </div>
+          </div>
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+              <div class="device-mockup imac portrait white">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="img/pitch.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="download bg-primary text-center" id="download">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="section-heading">Discover what all the buzz is about!</h2>
+            <p>Our Chrome Extension is available Download now to get started!</p>
+            <div class="badges">
+              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Why do you need EZApply?</h2>
+          <p class="text-muted"></p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 my-auto">
+            <div class="device-container">
+              <div class="device-mockup imac portrait white">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="img/pitch2.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-center">Saving You Time!</h3>
+            <p class="text-muted text-center" > "Job seekers have to apply for an average of 27 positions just to get one interview, a survey by CV writing service Standout CV has found. This translates to an average of 6.5 hours per week searching for a new job, and about 16 job applications a week."</p>
+            <h6 class="text-center">http://www.businessinsider.com/job-seekers-have-to-apply-for-27-jobs-for-every-interview-survey-finds</h6>
+          </div>
+          <div class="col-lg-6 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="feature-item">
+                    <i class="icon-screen-smartphone text-primary"></i>
+                    <h3>Security You Can Trust!</h3>
+                    <p class="text-muted">EZapply is driven by Firebase! To learn more about Firebase click <a href="https://firebase.google.com/" target="_blank">here</a>. "Development teams around the world—including NPR, Shazam, Duolingo, and Venmo—use Firebase to ship their apps.", "The Firebase Realtime Database handles many other security details for you. For example, we use SSL with strong 2048 bit keys for our certificates and we follow best practices for authentication tokens."</p> <h6>https://firebase.google.com/</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-content">
+        <div class="container">
+          <h2>Stop wasting time.<br>Get the job you've dreamed of FASTER.</h2>
+          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+
+    <section class="contact bg-primary" id="contact">
+      <div class="container">
+        <h2>We
+          <i class="fa fa-heart"></i>
+          new friends!</h2>
+        <ul class="list-inline list-social">
+          <li class="list-inline-item social-twitter">
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item social-facebook">
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item social-google-plus">
+            <a href="https://www.google.com/gmail/" target="_blank">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </sec
 
     <!-- Bootstrap core JavaScript -->
-    <script src="resumevendor/jquery/jquery.min.js"></script>
-    <script src="resumevendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="resumevendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="resumejs/resume.js"></script>
+    <script src="js/new-age.min.js"></script>
 
   </body>
 
