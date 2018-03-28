@@ -8,7 +8,7 @@ function runAutofill(e) {
   chrome.tabs.executeScript(null,
     {
       code: "fillInForm();"
-    })
+    });
 
   window.close();
 }
@@ -19,5 +19,5 @@ function runAutofill(e) {
 
 //     $($inputs[elt]).css('border', '#bd5d38 4px solid');
 //     $($inputs[elt]).css('borderRadius', '5px');
-    
+
 //   });
