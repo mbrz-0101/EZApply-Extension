@@ -55,7 +55,6 @@ function fillInForm() {
 
   // loop through input elements
   for (elt in $inputs) {
-    debugger;
 
     if ($inputs[elt].type !== 'hidden' && $inputs[elt].type !== 'radio') {
       // ==============================
