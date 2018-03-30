@@ -23,22 +23,22 @@ function fillInForm() {
   var areaOfStudyRegex = /area\sof\sstudy/i;
   var certificateRegex = /certificat/i;
 
-  var fName = localStorage.getItem('fname') || "Matt";
-  var lName = localStorage.getItem('lname') || "Mattson";
-  var email = localStorage.getItem('email') || "mmattson@gmail.com";
-  var phoneNumber = localStorage.getItem('phonenumber') || "2012012011";
-  var streetAddress = localStorage.getItem('streetAddress') || "200 S 200 E Apt 200";
-  var city = localStorage.getItem('city') || "Salt Lake";
+  var fName = localStorage.getItem('fname') || "John";
+  var lName = localStorage.getItem('lname') || "Doe";
+  var email = localStorage.getItem('email') || "john.doe@jdoe.com";
+  var phoneNumber = localStorage.getItem('phonenumber') || "4356795489";
+  var streetAddress = localStorage.getItem('streetAddress') || "100 Home Street";
+  var city = localStorage.getItem('city') || "Salt Lake City";
   var state = localStorage.getItem('state') || "UT";
-  var zipCode = localStorage.getItem('zipcode') || "84567";
-  var companyName = localStorage.getItem('companyname') || "EZApply";
-  var companyAddress = localStorage.getItem('companyaddress') || "101 Main St.";
-  var companyPhone = localStorage.getItem('companyphone') || "2012012011";
-  var companyPosition = localStorage.getItem('companyposition') || "CEO";
-  var schoolName = localStorage.getItem('schoolname') || "UofU";
-  var schoolAddress = localStorage.getItem('schooladdress') || "101 University Blvd.";
-  var fieldOfStudy = localStorage.getItem('studyfield') || "Software Dev";
-  var certificate = localStorage.getItem('certificate') || "Random Certificate";
+  var zipCode = localStorage.getItem('zipcode') || "84108";
+  var companyName = localStorage.getItem('companyname') || "EZApply, LLC";
+  var companyAddress = localStorage.getItem('companyaddress') || "101 EZ Lane ";
+  var companyPhone = localStorage.getItem('companyphone') || "8011089756";
+  var companyPosition = localStorage.getItem('companyposition') || "Chief Executive Officer";
+  var schoolName = localStorage.getItem('schoolname') || "University of Utah";
+  var schoolAddress = localStorage.getItem('schooladdress') || "50 N Medical Drive";
+  var fieldOfStudy = localStorage.getItem('studyfield') || "Software Development";
+  var certificate = localStorage.getItem('certificate') || "Web Development Certificate";
 
   // Set up counters to ensure correct autofilling
   var employerCounter = 0;
