@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "EZApply",
-  "description": "PLACEHOLDER",
-  "version": "1.0",
+  "description": "Job application auto-fill",
+  "version": "1.2",
   
   "icons": {
     "16": "images/ez_icon_red.png"

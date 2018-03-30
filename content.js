@@ -1,4 +1,5 @@
 console.log("This content script is working!");
+// Working
 
 function fillInForm() {
   var fNameRegex = /f(irst)?((\w+)*|\s|\w+\s|(\w+)?\W)name/i;

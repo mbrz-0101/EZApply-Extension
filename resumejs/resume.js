@@ -59,7 +59,7 @@
   //------submit form
     $("#saveform").on("click", function(event) {
       event.preventDefault();
-      
+     
       //---------Personal Info
       var fname = $("#fname").val().trim();
       var lname = $('#lname').val().trim();
