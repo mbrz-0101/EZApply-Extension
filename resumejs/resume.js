@@ -58,6 +58,7 @@
 
   //------submit form
     $("#saveform").on("click", function(event) {
+      alert('Thank you! Your information has been saved and is ready to be used on your next online application. Good luck!');
       event.preventDefault();
      
       //---------Personal Info
