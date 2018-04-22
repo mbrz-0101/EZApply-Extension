@@ -1,5 +1,5 @@
 # EZApply Chrome Extension (Open-Source)
-Webstore Link: https://chrome.google.com/webstore/detail/ezapply/chgdkmbnbbdljfpakdmhgfecnnbincld?hl=en
+***EZApply in Chrome Webstore***: https://chrome.google.com/webstore/detail/ezapply/chgdkmbnbbdljfpakdmhgfecnnbincld?hl=en
 
 According to a survey conducted by StandOut CV in the UK, job applicants must apply to an average of 27 positions to receive even 1 interview, and 26% of people say they find the process to be "Extremely Stressful". 
 (http://www.businessinsider.com/job-seekers-have-to-apply-for-27-jobs-for-every-interview-survey-finds)
