@@ -1,0 +1,18 @@
+div.device-container{
+	max-width: 900px!important;
+}
+h6{
+	font-size: xx-small!important;
+}
+@media (min-width: 576px){
+.my-auto{
+	padding-right: 15px!important;
+	padding-left: 15px!important;
+}
+@media (min-width: 992px){
+.my-auto{
+	padding-right: 0px!important;
+	padding-left: 100px!important;
+}
+}
+

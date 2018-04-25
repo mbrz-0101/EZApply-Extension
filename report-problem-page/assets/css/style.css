@@ -1,0 +1,14 @@
+.jumbotron{
+	text-align: center;
+	/*background-color: transparent;*/
+}
+h4{
+	text-align: center;
+}
+body{
+	/*background-color: #cac7be;*/
+	font-family: 'Raleway', sans-serif;
+}
+form{
+	background-color: transparent;
+}
