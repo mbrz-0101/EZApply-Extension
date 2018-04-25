@@ -3,20 +3,20 @@
 
   "name": "EZApply",
   "description": "Job application auto-fill",
-  "version": "1.3",
+  "version": "1.4",
   
   "icons": {
-    "16": "images/ez_icon_red.png"
+    "16": "ezapply-images/ez_icon_red.png"
   },
   "content_scripts": [
     {
-      "js": ["jquery-3.3.1.js", "content.js", "popup.js"],
+      "js": ["jquery-3.3.1.js", "content.js", "popup-page/assets/js/popup.js"],
       "matches": ["<all_urls>"]
     }
   ],
   "browser_action": {
-    "default_icon": "images/ez_icon_red.png",
-    "default_popup": "popup.html"
+    "default_icon": "ezapply-images/ez_icon_red.png",
+    "default_popup": "popup-page/popup.html"
   },
   "permissions": [
     "activeTab",
