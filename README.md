@@ -11,5 +11,6 @@ EZApply was designed to bridge the gap between the large job search services. Ma
 ***EZApply in Chrome Webstore***: https://chrome.google.com/webstore/detail/ezapply/chgdkmbnbbdljfpakdmhgfecnnbincld?hl=en
 
 ## Contribute/Get Involved: 
-Our team is new to software development. We took our idea and created it and pushed our boundaries with the application. However, our skills are still very limited. We would like to make EZApply an open-source project and call on the collaboration of developers in the field to make it really shine. 
-We began this project with one idea in mind: Applying for jobs **sucks**. We would like to fix that. But we need your help to make it as useful as possible.
+Our team is new to software development. We took the idea for EZApply, made it real, and pushed our boundaries. However, our skills are still very limited. We decided to make EZApply open-source and call on the collaboration of developers in the field to make it really shine.
+
+We began this project with one idea in mind: Applying for jobs **sucks**. We would like to fix that, and we need your help to do it. Take this project and run with it - add functionality, change/refactor our current code, or build from the ground up. Make it useful for job applicants everywhere. Good luck!!
