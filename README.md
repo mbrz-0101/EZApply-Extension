@@ -1,4 +1,4 @@
-![alt text](https://openclipart.org/download/237835/NEW-Questions-Asked-Clipart-2016011843.svg)
+![alt text](https://lh3.googleusercontent.com/GsMM8ZLqnpZQbBnpLQ393lgELsMOo-hrzkusbGtI2QSAu9CT2gji5TyxkfX-sBCz1bnX0NQy=w640-h400-e365)
 # EZApply Chrome Extension (Open-Source)
 According to a survey conducted by StandOut CV in the UK, job applicants must apply to an average of 27 positions to receive even 1 interview, and 26% of people say they find the process to be "Extremely Stressful". 
 (http://www.businessinsider.com/job-seekers-have-to-apply-for-27-jobs-for-every-interview-survey-finds)
