@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -16,7 +16,7 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -57,144 +57,144 @@
 
 
   //------submit form
-    $("#saveform").on("click", function(event) {
-      alert('Thank you! Your information has been saved and is ready to be used on your next online application. Good luck!');
-      event.preventDefault();
-     
-      //---------Personal Info
-      var fname = $("#fname").val().trim();
-      var lname = $('#lname').val().trim();
-      var email = $("#email").val().trim();
-      var phonenumber = $('#phonenumber').val().trim();
-      var streetaddress = $('#streetaddress').val().trim();
-      var city = $('#city').val().trim();
-      var state = $('#state').val().trim();
-      var zipcode = $('#zipcode').val().trim();
+  $("#saveform").on("click", function (event) {
+    alert('Thank you! Your information has been saved and is ready to be used on your next online application. Good luck!');
+    event.preventDefault();
+
+    //---------Personal Info
+    var fname = $("#fname").val().trim();
+    var lname = $('#lname').val().trim();
+    var email = $("#email").val().trim();
+    var phonenumber = $('#phonenumber').val().trim();
+    var streetaddress = $('#streetaddress').val().trim();
+    var city = $('#city').val().trim();
+    var state = $('#state').val().trim();
+    var zipcode = $('#zipcode').val().trim();
 
 
-      //-----------Employment
-      var companyname = $('#companyname').val().trim();
-      var companyposition = $('#companyposition').val().trim();
-      var companyphone = $('#companyphone').val().trim();
-      var companyaddress = $('#companyaddress').val().trim();
+    //-----------Employment
+    var companyname = $('#companyname').val().trim();
+    var companyposition = $('#companyposition').val().trim();
+    var companyphone = $('#companyphone').val().trim();
+    var companyaddress = $('#companyaddress').val().trim();
 
 
-      //-----------Education
-      var schoolname = $('#schoolname').val().trim();
-      var schooladdress = $('#schooladdress').val().trim();
-      // var startyear = $('#startyear').val().trim();
-      // var endyear = $('#endyear').val().trim();
-      var studyfield = $('#studyfield').val().trim();
+    //-----------Education
+    var schoolname = $('#schoolname').val().trim();
+    var schooladdress = $('#schooladdress').val().trim();
+    // var startyear = $('#startyear').val().trim();
+    // var endyear = $('#endyear').val().trim();
+    var studyfield = $('#studyfield').val().trim();
 
 
-      //-----------Skills And Certificates
-      var skill = $('#skill').val().trim();
-      var certificate = $('#certificate').val().trim();
+    //-----------Skills And Certificates
+    var skill = $('#skill').val().trim();
+    var certificate = $('#certificate').val().trim();
 
 
-      // Clear localStorage
-      // localStorage.clear();
-      //-----------Profileimg
-      var profileimgsrc = ($('img').attr('src'));
+    // Clear localStorage
+    // localStorage.clear();
+    //-----------Profileimg
+    var profileimgsrc = ($('img').attr('src'));
 
-      // Store all content into localStorage
-      //------------Contact info
-      localStorage.setItem("fname", fname);
-      localStorage.setItem("lname", lname);
-      localStorage.setItem("email", email);
-      localStorage.setItem("phonenumber", phonenumber);
-      localStorage.setItem("streetaddress", streetaddress);
-      localStorage.setItem("city", city);
-      localStorage.setItem("state", state);
-      localStorage.setItem("zipcode", zipcode);
-
-
-
-      //----------Employment
-      localStorage.setItem("companyname", companyname);
-      localStorage.setItem("companyaddress", companyaddress);
-      localStorage.setItem("companyphone", companyphone);
-      localStorage.setItem("companyposition", companyposition);
+    // Store all content into localStorage
+    //------------Contact info
+    localStorage.setItem("fname", fname);
+    localStorage.setItem("lname", lname);
+    localStorage.setItem("email", email);
+    localStorage.setItem("phonenumber", phonenumber);
+    localStorage.setItem("streetaddress", streetaddress);
+    localStorage.setItem("city", city);
+    localStorage.setItem("state", state);
+    localStorage.setItem("zipcode", zipcode);
 
 
 
-      //-----------Education
-      localStorage.setItem("schooladdress", schooladdress);
-      localStorage.setItem("schoolname", schoolname);
-      localStorage.setItem("startyear", startyear);
-      localStorage.setItem("endyear", endyear);
-      localStorage.setItem("studyfield", studyfield);
+    //----------Employment
+    localStorage.setItem("companyname", companyname);
+    localStorage.setItem("companyaddress", companyaddress);
+    localStorage.setItem("companyphone", companyphone);
+    localStorage.setItem("companyposition", companyposition);
 
 
 
-      //------------Skills and certificates
-      localStorage.setItem("skill", skill);
-      localStorage.setItem("certificate", certificate);
+    //-----------Education
+    localStorage.setItem("schooladdress", schooladdress);
+    localStorage.setItem("schoolname", schoolname);
+    localStorage.setItem("startyear", startyear);
+    localStorage.setItem("endyear", endyear);
+    localStorage.setItem("studyfield", studyfield);
 
-      localStorage.setItem('profileimgsrc', profileimgsrc);
-      console.log(localStorage);
-    });
+
+
+    //------------Skills and certificates
+    localStorage.setItem("skill", skill);
+    localStorage.setItem("certificate", certificate);
+
+    localStorage.setItem('profileimgsrc', profileimgsrc);
+    console.log(localStorage);
+  });
 
 
 })(jQuery); // End of use strict
 var img = ($('img').attr('src'));
 console.log(img);
 $("#fname").attr("placeholder", localStorage.getItem('lname'));
- //------by default load local storage to form
+//------by default load local storage to form
 
-  //------personal info
-  $('#fname').attr("value", localStorage.getItem('fname'));
-   $("#lname").attr("value", localStorage.getItem('lname'));
-    $("#email").attr("value", localStorage.getItem('email'));
-    $("#phonenumber").attr("value", localStorage.getItem('phonenumber'));
-    $("#streetaddress").attr("value", localStorage.getItem('streetaddress'));
-     $("#city").attr("value", localStorage.getItem('city'));
-    $("#state").attr("value", localStorage.getItem('state'));
-    $("#zipcode").attr("value", localStorage.getItem('zipcode'));
-  //------employment
-    $("#companyname").attr("value", localStorage.getItem('companyname'));
-    $("#companyposition").attr("value", localStorage.getItem('companyposition'));
-    $("#companyphone").attr("value", localStorage.getItem('companyphone'));
-    $("#companyaddress").attr("value", localStorage.getItem('companyaddress'));
-  //-----education
-    $("#schoolname").attr("value", localStorage.getItem('schoolname'));
-    $("#schooladdress").attr("value", localStorage.getItem('schooladdress'));
-    $("#startyear").attr("value", localStorage.getItem('startyear'));
-    $("#endyear").attr("value", localStorage.getItem('endyear'));
-    $("#studyfield").attr("value", localStorage.getItem('studyfield'));
-  //-----skills and certificates
-    $('#skill').attr("value", localStorage.getItem('skill'));
-    $('#certificate').attr("value", localStorage.getItem('certificate'));
+//------personal info
+$('#fname').attr("value", localStorage.getItem('fname'));
+$("#lname").attr("value", localStorage.getItem('lname'));
+$("#email").attr("value", localStorage.getItem('email'));
+$("#phonenumber").attr("value", localStorage.getItem('phonenumber'));
+$("#streetaddress").attr("value", localStorage.getItem('streetaddress'));
+$("#city").attr("value", localStorage.getItem('city'));
+$("#state").attr("value", localStorage.getItem('state'));
+$("#zipcode").attr("value", localStorage.getItem('zipcode'));
+//------employment
+$("#companyname").attr("value", localStorage.getItem('companyname'));
+$("#companyposition").attr("value", localStorage.getItem('companyposition'));
+$("#companyphone").attr("value", localStorage.getItem('companyphone'));
+$("#companyaddress").attr("value", localStorage.getItem('companyaddress'));
+//-----education
+$("#schoolname").attr("value", localStorage.getItem('schoolname'));
+$("#schooladdress").attr("value", localStorage.getItem('schooladdress'));
+$("#startyear").attr("value", localStorage.getItem('startyear'));
+$("#endyear").attr("value", localStorage.getItem('endyear'));
+$("#studyfield").attr("value", localStorage.getItem('studyfield'));
+//-----skills and certificates
+$('#skill').attr("value", localStorage.getItem('skill'));
+$('#certificate').attr("value", localStorage.getItem('certificate'));
 
 
-    $('img').attr('src', localStorage.getItem('profileimgsrc'));
-    
+$('img').attr('src', localStorage.getItem('profileimgsrc'));
 
- $(document).ready(function() {
 
-    
-    var readURL = function(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
+$(document).ready(function () {
 
-            reader.onload = function (e) {
-                $('img').attr('src', e.target.result);
-                console.log(e);
-            }
-    
-            reader.readAsDataURL(input.files[0]);
-            console.log(input.files);
-        }
+
+  var readURL = function (input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $('img').attr('src', e.target.result);
+        console.log(e);
+      }
+
+      reader.readAsDataURL(input.files[0]);
+      console.log(input.files);
     }
-    
+  }
 
-    $(".file-upload").on('change', function(){
-        readURL(this);
-    });
-    
-    $(".upload-button").on('click', function() {
-       $(".file-upload").click();
-    });
+
+  $(".file-upload").on('change', function () {
+    readURL(this);
+  });
+
+  $(".upload-button").on('click', function () {
+    $(".file-upload").click();
+  });
 });
 
 
